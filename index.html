@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associação dos estudantes do Instituto Médio de Economia de Luanda</title>
+    <link rel="icon" href="C:\Users\HP\Pictures\AE.png">
+    <link rel="stylesheet" href="AE.css"/>
+</head>
+<body>
+    <div id="header">
+        <ul>
+           <li><a href="file:///C:/Users/HP/Documents/AE-IMEL/Nova%20pasta/Candidatura/can.html">Candidatura</a></li>
+            <li><a href="file:///C:/Users/HP/Documents/AE-IMEL/Nova%20pasta/Regulamento/reg.html">Regulamento</a></li>
+            <li><a href="file:///C:/Users/HP/Documents/AE-IMEL/Nova%20pasta/Regulamento/reg.html">Calendário</a></li>
+            <li><a href="file:///C:/Users/HP/Documents/AE-IMEL/Nova%20pasta/chat/chat.html">Chat</a></li>
+            <li><a href="file:///C:/Users/HP/Documents/AE-IMEL/Nova%20pasta/ferramentas/ferr.html">Ferramentas</a></li>
+            <li><a href="file:///C:/Users/HP/Documents/AE-IMEL/Nova%20pasta/Entrar/entrar.html">Entrar</a></li>
+          </ul>
+      </div>
+      <div id="menu">
+        <img src="C:\Users\HP\Pictures\logotipos para projectos\AE.png" alt="Ícone do Site">
+        <h1>AE-IMEL</h1>
+        
+        <header>
+        <ul>
+          <li><a href="file:///C:/Users/HP/Documents/AE-IMEL/Nova%20pasta/AE.html#">Página inicial</a></li>
+          <li><a href="file:///C:/Users/HP/Documents/AE-IMEL/Nova%20pasta/not%C3%ADcias/not.html">Notícias</a></li>
+          <li><a href="file:///C:/Users/HP/Documents/AE-IMEL/Nova%20pasta/cursos/cursos.html">Cursos</a></li>
+          <li><a href="file:///C:/Users/HP/Documents/AE-IMEL/Nova%20pasta/diversos/div.html">Diversos</a></li>
+          <li><a href="file:///C:/Users/HP/Documents/AE-IMEL/Nova%20pasta/sobre%20nos/sobre.html">Sobre Nós</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <img src="C:\Users\HP\Pictures\pessoas2.jpeg" alt="Imagem 1">
+   <img src="C:\Users\HP\Pictures\pessoas.jpeg" alt="Imagem 2">
+      </div>
+    </header>
+      
+      <script>
+         const images = document.querySelectorAll('#content img');
+    let index = 0;
+
+    function changeImage() {
+      images[index].style.opacity = 0;
+      index = (index + 1) % images.length;
+      images[index].style.opacity = 1;
+    }
+
+    setInterval(changeImage, 5000);
+      </script>
+         
+    <main>
+      <br>
+        <div class="search-container">
+            <form action="/search" method="GET">
+                <input type="text" name="q" id="search" placeholder="Pesquisar...">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <br>
+        <br>
+        <H1>Associação dos Estudantes do Instituto Médio de Economia de Luanda</H1>
+        <p>A Associação dos Estudantes do Instituto Médio de Economia de Luanda, 
+          adiante designada AE-IMEL, é uma pessoa colectiva de direito privado e sem
+           fins lucrativos, tendo como fundamento a sua natureza jurídica a Constituição 
+           da República de Angola e a Lei nº 6\12 de 18 de Janeiro 
+           ( Lei das Associações Privadas ), criada a 25 de Março de 1995 por estudantes do
+            referido instituto, com sede no Instituto Médio Técnico nº 1142, com sede no 
+            bloco C da referida instituição, é um órgão interno e vertical da estrutura 
+            do IMEL, vocacionado para a construção salutar de uma vivencia académica 
+            inclusiva e de uma colaboração e parceria entre Estado, instituições  públicas 
+            e privadas e de ensino, no processo de desenvolvimento e gestão do país, 
+            assumindo um papel crucial na vida dos estudantes do IMEL, promovendo acções 
+            a nível de oferta formativa, qualidade de ensino e avaliação, acção social, 
+            investigação técnico-científica, inovação, dinamização cultural, desportiva, ambiental,
+             entre outras, realizando actividades  extra-curriculares a nível interno e externo do IMEL.</p>
+    </main>
+          <audio src="C:\Users\HP\Music\Ficheiro de áudio WhatsApp 2023-05-08 às 23.53.00.mp3"></audio>
+    <footer>
+        <div class="contato">
+            <h2>Contatos</h2>
+            <p>Email: <a href="mailto:associacaodosestudantesdoimel@gmail.com">associacaodosestudantesdoimel@gmail.com</a></p>
+            <p>Telefone: (+244) 945 678 900</p>
+            <p>Siga-nos nas redes sociais:</p>
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100089169426087&mibextid=LQQJ4d">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const emailElement = document.querySelector('.contato p:nth-child(1)');
+emailElement.addEventListener('click', () => {
+    alert('Envie um email para associacaodosestudantesdoimel@gmail.com');
+});
+    </script>
+
+</body>
+</html>
